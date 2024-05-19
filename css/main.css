@@ -1,0 +1,983 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.HomeHeader {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/homePageHeader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2em;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  float: left;
+  margin-left: 20px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.648);
+  border-radius: 25px;
+  padding: 20px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 90%;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+}
+
+.navLinks li {
+  margin: 0 10px;
+}
+
+.navLinks a {
+  text-decoration: none;
+}
+
+.active {
+  color: red;
+}
+
+.flights,
+.contact {
+  color: #333;
+}
+
+.search-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.searchInput {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.searchIcon {
+  background-position: center;
+}
+
+.line {
+  height: 30px;
+  width: 1px;
+  background-color: lightgrey;
+  margin-left: 5px;
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+}
+
+.basket {
+  position: relative;
+  margin-left: 10px;
+}
+
+.basket img {
+  width: 30px;
+}
+
+.badge {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+}
+
+.badgeflight {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 12px;
+  width: 25px !important;
+  height: 25px !important;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Porter Sans Block";
+  src: url("../assets/Red Planet Ventures/Assets/Fonts/porter_sans_block/porter-sans-inline-block-webfont.woff")
+    format("woff");
+}
+
+.imgTextOverlay {
+  font-size: 20px;
+  padding: 16px;
+  align-self: flex-start;
+  margin-left: 2em;
+  margin-bottom: 3em;
+  background-image: url(../assets/Red\ Planet\ Ventures/.HomeHeader);
+}
+
+.imgTextOverlay img {
+  width: 100%;
+}
+
+.bottomLeft {
+  font-family: "Porter Sans Block";
+  color: #ea0303;
+  font-size: 64px;
+}
+
+.bottomLeftH{
+  font-family: "Porter Sans Block";
+  color: #3a0085;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: #55132d;
+  padding: 5em;
+}
+
+.sliderImage {
+  width: 800px;
+}
+
+.image-container {
+  position: relative;
+  width: 800px 
+}
+
+.image-container img {
+  width: 550px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 45%;
+  left: 7.8em;
+  right: 0;
+  width: 530px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowLeft img {
+  justify-content: end;
+  width: 30px;
+  height: 60px;
+  background-size: cover;
+}
+
+.arrowRight img {
+  justify-content: end;
+  width: 30px;
+  height: 60px;
+}
+
+.content {
+  margin-top: 20px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  margin-left: 5em;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: start;
+  padding: 0;
+  margin: 0;
+  color: #28c7cc;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: start;
+  color: white;
+}
+
+.shuttles{
+font-size: 48px;
+font-weight: 700;
+margin-bottom: 16px;
+text-align: start;
+color: #3a0085;
+}
+
+.shuttlesp{
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  color: #3c0062;
+  }
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  color: white;
+}
+
+.book-now {
+  background-color: #e7bc80;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  padding: 20px;
+}
+
+.book-now:hover {
+  background-color: #d35b4c;
+}
+
+.container-os {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 7em;
+  margin-left: 5%;
+}
+
+.image-container-os {
+  position: relative;
+  width: 45%;
+  padding: 4em;
+}
+
+.image-container-os img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.content-os {
+  margin-top: 20px;
+  width: 40%;
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.container-td {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #55132d;
+  padding: 2em;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.main-title {
+  font-size:48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 24px;
+}
+
+.trip-card {
+  border-radius: 15px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trip-card-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  background-size: cover;
+  background-position: center;
+}
+
+.mars {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/flighhtMars.png");
+}
+
+.neptune {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/flightNeptune.png");
+}
+
+.jupiter {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/flightJupiter.png");
+}
+
+.saturn {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/flightSaturn.png");
+}
+
+.trip-card-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.trip-card-description {
+  font-size: 18px;
+  font-weight: 00;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.book-trip-btn {
+  background-color: #e7bc80;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.book-trip-btn:hover {
+  background-color: #d35b4c;
+}
+
+/* Footer */
+
+.footer {
+  background-color: white;
+  color: black;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+.company-info {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+.tagline {
+  color: grey;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links,
+.social-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.nav-links span,
+.social-links span {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.sm-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.legal-text {
+  font-size: 14px;
+  margin: 0;
+  color: grey;
+}
+
+.links a {
+  color: grey;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.fab {
+  font-size: 24px;
+  margin-right: 10px;
+  height: 24px;
+  width: 24px;
+}
+
+.SocialTile {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 30px;
+  align-self: flex-start;
+}
+
+.logoFooter {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/*Flight css starts here*/
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.Flight-Info {
+  display: flex;
+  padding: 5em;
+}
+
+.purple {
+  background-color: #55132d;
+}
+
+.col-details {
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-image{
+  align-self: center;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.FlightsHeader {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/headerbackBack.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2em;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FlightsHeader h1 {
+  margin-top: 7%;
+}
+
+.bookflight{
+    font-family: "Porter Sans Block";
+}
+
+.whitep{
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: start;
+  color: rgb(0, 0, 0);
+}
+
+.marsText{
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: start;
+  color: rgb(0, 0, 0);
+}
+
+.pricing{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 30%;
+}
+
+.pricing p{
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+.review p{
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.rating {
+  color: #ff9500;
+}
+
+.button-group {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.info-btn,
+.book-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: #e7bc80;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qtaBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e7bc80;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+.qtaBox p {
+  padding: 0;
+  margin: 0;
+}
+
+.qtaBox input {
+  text-align: center !important;
+  color: white;
+}
+
+.info-btn {
+  width: 50px;
+  height: 20px;
+  background-color: #e7bc80;
+  margin-right: 10px;
+}
+
+.book-btn {
+  background-color: #d35b4c;
+  color: #ffffff;
+  padding: 20px 80px;
+}
+
+.book-btn:hover {
+  background-color: #f4a49c;
+}
+
+.price {
+  color: #ffffff;
+}
+
+.view-cart {
+  text-align: end;
+  padding: 2em;
+  background-color: #55132d;
+}
+
+.details p{
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: start;
+  color: grey
+}
+
+.view-cart button {
+  padding:  20px 80px;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #e7bc80;
+  color:#ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-cart button:hover {
+  background-color: #d35b4c;
+}
+
+.FilterCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: #55132d;
+  height: 50px;
+  padding: 2% 4%;
+}
+
+.LeftUtil {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.LeftUtil p {
+  margin-top: 25px;
+}
+
+.RightUtil {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 50px;
+}
+
+.RightUtil p {
+  margin-top: 25px;
+}
+
+.RightUtil button {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.648);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
+
+/*Contact css starts here*/
+
+
+
+
+
+.logo {
+  float: left;
+  margin-left: 20px;
+}
+
+.contactHeader {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/headerbackBack.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2em;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: start;
+  color: rgb(255, 255, 255);
+}
+
+.flights,
+.contact {
+  color: #333;
+}
+
+.contacth{
+  font-family: "Porter Sans Block";
+  font-size: 60px;
+  text-align: center;
+}
+
+.contactHeader h1 {
+  margin-bottom: 1.6em;
+}
+
+.sm-items {
+  width: 97px 97px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container-os {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 3em;
+  margin-left: 5%;
+}
+
+.image-container-os {
+  position: relative;
+  width: 45%;
+}
+
+.image-container-os img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.content {
+  padding: 7em;
+}
+
+.content-os {
+  margin-top: 20px;
+  width: 40%;
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.flexRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  height: 90vh;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 3em;
+  margin-left: 4%;
+}
+
+iframe {
+  display: block;
+  border-style: none;
+}
+
+.smContact {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+#contact input,
+#contact text,
+#contact button,
+#contact textarea{
+  font-weight: 400;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 20px !important;
+  border: none !important;
+}
+
+#contact {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/formBack.png");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 2em 4em;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  color: white;
+  margin-right: 10%;
+}
+
+label {
+  color: white;
+  margin: px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+fieldset {
+  border: medium none !important;
+  margin-top: 10px;
+  min-width: 100%;
+  padding: 0px;
+  width: 100%;
+}
+
+#contact input,
+#contact textarea {
+  width: 90%;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  margin: 0 0 5px;
+  padding: 20px !important;
+  border: none !important;
+  border-radius: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button {
+  cursor: pointer;
+  width: 250px;
+  border: none;
+  background-color: #cb0101;
+  color: #ffffff;
+  padding: 10px;
+}
+
+#contact button:hover {
+  background-color: #f4a49c;
+}
+
