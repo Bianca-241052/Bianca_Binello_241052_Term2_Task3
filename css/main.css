@@ -144,7 +144,7 @@ nav {
   padding: 16px;
   align-self: flex-start;
   margin-left: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 6em;
   background-image: url(../assets/Red\ Planet\ Ventures/.HomeHeader);
 }
 
@@ -361,10 +361,9 @@ p {
 }
 
 .trip-card-image {
-  width: 300px;
-  height: 300px;
+  width: 278px;
+  height: 278px;
   border-radius: 20px;
-  margin-bottom: 12px;
   background-size: cover;
   background-position: center;
 }
@@ -388,7 +387,8 @@ p {
 .trip-card-title {
   font-size: 30px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 1px;
+  text-align: center;
 }
 
 .trip-card-description {
@@ -402,7 +402,8 @@ p {
   background-color: #e7bc80;
   color: #fff;
   border: none;
-  padding: 14px 28px;
+  padding: 22px 40px;
+  margin-left: 35em;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
