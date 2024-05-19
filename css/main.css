@@ -182,17 +182,16 @@ nav {
 }
 
 .image-container img {
-  width: 550px;
-  height: auto;
+  width: 609px 640px;
   border-radius: 8px;
 }
 
 .arrow-container {
   position: absolute;
   top: 45%;
-  left: 7.8em;
+  left: 5.4em;
   right: 0;
-  width: 530px;
+  width: 600px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -279,6 +278,7 @@ p {
   font-size: 22px;
   font-weight: 700;
   border-radius: 10px;
+  margin-top: 1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 200px;
@@ -302,7 +302,8 @@ p {
 
 .image-container-os {
   position: relative;
-  width: 45%;
+  width: 100%;
+  height: auto;
   padding: 4em;
 }
 
@@ -314,6 +315,7 @@ p {
 
 .content-os {
   margin-top: 20px;
+  width: 100%;
   display: flex;
   justify-content: start;
   align-content: flex-start;
@@ -854,24 +856,22 @@ h3 {
 
 .image-container-os {
   position: relative;
-  width: 45%;
+  width: 100%;
 }
 
 .image-container-os img {
-  width: 100%;
-  height: auto;
+  width: 609px 
+  height: 649px;
   border-radius: 12px;
 }
 
 .content {
-  padding: 1em;
+  padding: 10em;
 }
 
 .content-os {
   margin-top: 20px;
-  width: 40%;
   display: flex;
-  justify-content: start;
   align-content: flex-start;
   flex-direction: column;
 }
