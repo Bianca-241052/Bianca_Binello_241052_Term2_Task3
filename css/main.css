@@ -143,7 +143,7 @@ nav {
   font-size: 20px;
   padding: 16px;
   align-self: flex-start;
-  margin-left: 2em;
+  margin-left: 3em;
   margin-bottom: 6em;
   background-image: url(../assets/Red\ Planet\ Ventures/.HomeHeader);
 }
@@ -213,14 +213,13 @@ nav {
 
 .content {
   margin-top: 20px;
-  padding: 0 20px;
+  padding: 0 40px;
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
-
   margin-left: 5em;
 }
 
@@ -315,7 +314,6 @@ p {
 
 .content-os {
   margin-top: 20px;
-  width: 40%;
   display: flex;
   justify-content: start;
   align-content: flex-start;
@@ -328,7 +326,7 @@ p {
   align-items: center;
   text-align: center;
   background-color: #55132d;
-  padding: 2em;
+  padding: 6em;
 }
 
 .section-title {
@@ -347,8 +345,9 @@ p {
 .trip-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   margin-bottom: 24px;
+  padding: 0.3em;
 }
 
 .trip-card {
@@ -385,14 +384,14 @@ p {
 }
 
 .trip-card-title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 1px;
   text-align: center;
 }
 
 .trip-card-description {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 00;
   margin-bottom: 0;
   text-align: center;
@@ -403,8 +402,9 @@ p {
   color: #fff;
   border: none;
   padding: 22px 40px;
-  margin-left: 35em;
-  font-size: 18px;
+  margin-left: 25em;
+  margin-top: 2em;
+  font-size: 22px;
   font-weight: 700;
   cursor: pointer;
   border-radius: 10px;
@@ -864,7 +864,7 @@ h3 {
 }
 
 .content {
-  padding: 7em;
+  padding: 1em;
 }
 
 .content-os {
