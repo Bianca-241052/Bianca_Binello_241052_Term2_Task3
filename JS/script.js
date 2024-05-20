@@ -74,18 +74,33 @@ if (hour < 12){
 
 
   //js for contact form
-  document.getElementById('contact').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevents the form from submitting
-    // Get the values of the form fields
-    var name = document.getElementById('nameInput').value;
-    var email = document.getElementById('emailInput').value;
-    var subject = document.getElementById('subjectInput').value;
-    var message = document.getElementById('messageInput').value;
-    // Displays the thank you message with the entered name
-    document.getElementById('userName').textContent = name;
-    document.getElementById('thankYouMessage').style.display = 'block';
-    document.getElementById('contact').style.display = 'none';
+  const form = document.getElementById('contact');
+  const nameInput = document.getElementById('nameInput');
+  const emailInput = document.getElementById('emailInput');
+  const subjectInput = document.getElementById('subjectInput');
+  const messageInput = document.getElementById('messageInput');
+  const submitButton = document.getElementById('contactSubmit');
 
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const subject = subjectInput.value.trim();
+    const message = messageInput.value.trim();
+
+    if (name === '' || email === '' || subject === '' || message === '') {
+      alert('Please fill in all the required fields.');
+    } else {
+      // to reset the form fields
+      nameInput.value = '';
+      emailInput.value = '';
+      subjectInput.value = '';
+      messageInput.value = '';
+
+      // Displays the thank you message
+      alert(`Thank you, ${name}, for your message!`);
+    }
   });
 
 
