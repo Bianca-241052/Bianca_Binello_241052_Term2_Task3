@@ -174,15 +174,16 @@ nav {
 
 .sliderImage {
   width: 800px;
+  /*display: none; /* Hide all images by default */
 }
 
 .image-container {
   position: relative;
-  width: 800px
+  width: 800px;
 }
 
 .image-container img {
-  width: 609px 640px;
+  width: 640px;
   border-radius: 8px;
 }
 
@@ -197,17 +198,12 @@ nav {
   justify-content: space-between;
 }
 
-.arrowLeft img {
-  justify-content: end;
+.arrowLeft img,
+.arrowRight img {
+  cursor: pointer;
   width: 30px;
   height: 60px;
   background-size: cover;
-}
-
-.arrowRight img {
-  justify-content: end;
-  width: 30px;
-  height: 60px;
 }
 
 .content {
