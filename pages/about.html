@@ -71,23 +71,46 @@
       background: no-repeat center center scroll;
       background-size: cover;
     }
+
     .carousel-caption {
       bottom: 50%;
       transform: translateY(50%);
       text-align: left;
     }
+
     .carousel-caption h1 {
       font-size: 4rem;
       font-weight: 700;
     }
+
     .carousel-caption p {
       font-size: 1.5rem;
       font-weight: 400;
     }
+
     .carousel-caption .btn {
       font-size: 1.2rem;
       padding: 0.8rem 1.2rem;
+      border-radius: 12px;
     }
+
+    .history-section, .about-section {
+      padding: 60px 0;
+      background-color: white;
+    }
+
+    .history-section h2, .about-section h2{
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .history-section p, .about-section p{
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
   </style>
 </head>
 <body>
@@ -131,6 +154,43 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+    <section class="about-section container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+          <h2>About the Company</h2>
+          <p>
+            Red Planet Ventures is at the forefront of the space tourism industry. Our company is dedicated to providing unique and exhilarating experiences for space enthusiasts and adventure seekers alike. With a team of experienced professionals and cutting-edge technology, we ensure that each journey is safe, enjoyable, and unforgettable.
+          </p>
+          <p>
+            We are passionate about space exploration and committed to making it accessible to people from all walks of life. Our innovative approach and customer-centric philosophy have earned us a reputation as a leader in space tourism. Join us as we continue to explore the vast wonders of the cosmos.
+          </p>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <img src="../assets/Red Planet Ventures/Assets/Images/marsSliderClipped14.png" class="img-fluid rounded" alt="About the Company">
+        </div>
+      </div>
+    </section>
+
+    <section class="history-section container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Our History</h2>
+          <p>
+            Red Planet Ventures was founded with a mission to make space exploration accessible to everyone. From humble beginnings, we have grown into a leading provider of space tourism experiences, offering journeys to the most fascinating destinations in our solar system.
+          </p>
+          <p>
+            Our commitment to innovation, safety, and customer satisfaction has driven us to push the boundaries of what's possible, providing unforgettable experiences for all our travelers. Join us as we continue to explore the final frontier and make history together.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="../assets/Red Planet Ventures/Assets/Images/marsSliderClipped3.png" class="img-fluid rounded" alt="Our History">
+        </div>
+      </div>
+    </section>
+
+
+
   </header>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
