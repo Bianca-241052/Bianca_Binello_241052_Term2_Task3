@@ -1,0 +1,260 @@
+/* 
+    The flights.css file affects only the styles on flight.html
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.Flight-Info {
+  display: flex;
+  padding: 5em;
+  min-height: 100vh;
+}
+
+.Flight-Info:nth-child(2n) {
+  background-color: #1a1355;
+}
+
+.Flight-Info:nth-child(2n) h1, .Flight-Info:nth-child(2n) p{
+  color: white;
+}
+
+.col-details {
+  margin-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.col-image{
+  align-self: center;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.review .pipe{
+  margin: 0px 10px;
+  height: 20px;
+}
+
+.FlightsHeader {
+  background-image: url("../assets/Red Planet Ventures/Assets/Images/headerbackBack.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2em;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FlightsHeader h1 {
+  margin-top: 7%;
+}
+
+.bookflight{
+    font-family: "Porter Sans Block";
+}
+
+.whitep{
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: start;
+  color: rgb(0, 0, 0);
+}
+
+.marsText{
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  text-align: start;
+  color: rgb(0, 0, 0);
+}
+
+.pricing{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 30%;
+}
+
+.pricing p{
+  font-size: 20px;
+  font-weight: 400;
+  color: grey;
+  
+  text-wrap: nowrap;
+}
+
+.review p{
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px;
+  color: grey;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.rating {
+  color: #ff9500;
+}
+
+.button-group {
+  display: flex;
+  justify-content: start;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.info-btn,
+.book-btn {
+  padding: 10px 18px;
+  font-size: 22px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  color: #006eff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qtaBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #006eff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+.qtaBox p {
+  padding: 0;
+  margin: 0;
+}
+
+.qtaBox input {
+  text-align: center !important;
+  color: white;
+}
+
+.info-btn {
+  width: 50px;
+  height: 20px;
+  background-color: #006eff;
+  margin-right: 10px;
+}
+
+.book-btn {
+  background-color: #8841ec;
+  color: #ffffff;
+  padding: 20px 88px;
+}
+
+.book-btn:hover {
+  background-color: #4316bc;
+}
+
+.price {
+  color: #ffffff;
+}
+
+.view-cart {
+  text-align: end;
+  padding: 2em;
+  background-color: #1a1355;;
+}
+
+.details p{
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 16px;
+  color: rgb(162, 162, 162);
+}
+
+.view-cart button {
+  padding:  28px 100px;
+  font-size: 24px;
+  font-weight: 700;
+  background-color:  #006eff;
+  color:#ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-cart button:hover {
+  background-color:  #8841ec;
+}
+
+.FilterCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: #1a1355;
+  height: 50px;
+  padding: 2% 4%;
+}
+
+.LeftUtil {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: start;
+}
+
+.LeftUtil p {
+  margin-top: 25px;
+}
+
+.RightUtil {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  align-content: end;
+}
+
+.RightUtil p {
+  margin: 0px;
+}
+
+.RightUtil button {
+  background-color: rgba(255, 255, 255, 0.648);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  min-width: 40px;
+}
+
+.filterButton {
+  background: none;
+  cursor: pointer;
+  border: none;
+}

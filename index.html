@@ -1,227 +1,264 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, Bootstrap, Template"
-    />
-    <meta name="author" content="Bianca Binello 241052" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Template"> 
+    <meta name="author" content="Bianca Binello 241052">
     <title>Red Planet Ventures</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/root.css">
   </head>
 
   <body>
-    <header class="HomeHeader">
-      <nav>
-        <div class="logo">
+    <div class="container-fluid">
+      <div id="toastContainer" class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11;"></div>
+      <header id="LandingHeader">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <div class="logo">
+              <img
+                src="assets/Red Planet Ventures/Assets/Images/logo.png"
+                width="266px 48px"
+              />
+            </div>
+            <div class="collapse navbar-collapse ml-auto mr-auto" id="navbarNav">
+              <ul class="navLinks navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/flights.html">Flights</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+              </ul>
+            </div>
+            <div class="search-container ml-2">
+              <button type="submit" class="btn btn-outline-secondary">
+                <img src="assets/Red Planet Ventures/Assets/search-icon.png" width="20px" alt="Search">
+              </button>
+              <input id="searchInput" class="form-control searchInput" type="text" placeholder="Search...">
+              <div id="autocomplete-list" class="autocomplete-items"></div>
+              <div class="pipe"></div>
+              <button id="cartButton" class="basket">
+                <img class="searchIcon" src="assets/Red Planet Ventures/Assets/Images/PikPng.com_basket-png_753198.png" alt="Basket">
+                <span class="badge"></span>
+              </button>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <img
+                src="./assets/Red Planet Ventures/Assets/Images/lines.png"
+                height="20px"
+              />
+            </button>
+          </div>
+
+          <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="max-width: 800px;">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" id="checkoutBtn" class="btn btn-primary">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <section class="imgTextOverlay">
+          <h1 class="bottomLeft">
+            Red Planet <br />
+            Ventures
+          </h1>
+          <div class="bottomLeftH">EXPLORE THE SOLAR SYSTEM</div>
+        </section>
+      </header>
+
+      <section class="rpv-container container-fluid pl-5 pr-5 purple-bg">
+        <div id="carouselExample" class="carousel slide image-container">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped1.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped2.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped3.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped14.png" class="d-block w-100">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="content ml-5">
+          <h2>FEATURED TRIP</h2>
+          <h1>THE CLASSIC MARS EXPERIENCE</h1>
+          <p>
+            Embark on a Mars vacation: red deserts, ancient relics, and towering
+            canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons,
+            and stargazing under Phobos and Deimos. Unforgettable adventures
+            beckon on the rust-colored landscapes of the Red Planet.
+          </p>
+          <button class="btn-light" id="bookNowBtn">Book Now</button>
+        </div>
+      </section>
+
+      <section class="rpv-container container-fluid pl-5 pr-5">
+        <div class="content">
+          <h2>OUR SHUTTLES</h2>
+          <h1 class="shuttles">Travel In Style With A Variety Of Shuttles</h1>
+          <p class="shuttlesp">
+            Select from our range of luxury, commercial, or budget shuttles to fulfill your dream space vacation. 
+            Experience unparalleled comfort and convenience as you journey to your planet of choice, ensuring an unforgettable and tailored experience for every traveler.
+          </p>
+        </div>
+        <div class="image-container-os">
           <img
-            src="assets/Red Planet Ventures/Assets/Images/logo.png"
-            width="266px 48px"
+            src="assets/Red Planet Ventures/Assets/Images/spacSchuttles.png"
           />
         </div>
-        <ul class="navLinks">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="pages/flights.html">Flights</a></li>
-          <li><a href="pages/contact.html">Contact Us</a></li>
-          <li><a href="pages/about.html">About</a></li>
-        </ul>
-        <div class="search-container">
-          <button type="submit">
-            <img
-              src="assets/Red Planet Ventures/Assets/search-icon.png"
-              width="20px"
-            />
-          </button>
-          <input class="searchInput" type="text" placeholder="Search..." />
-          <div class="line"></div>
-          <div class="basket">
-            <img
-              class="searchIcon"
-              src="assets/Red Planet Ventures/Assets/Images/PikPng.com_basket-png_753198.png"
-            />
-            <span class="badge">2</span>
-          </div>
-        </div>
-      </nav>
-
-      <section class="imgTextOverlay">
-        <h1 class="bottomLeft">
-          Red Planet <br />
-          Ventures
-        </h1>
-        <div class="bottomLeftH">EXPLORE THE SOLAR SYSTEM</div>
       </section>
-    </header>
 
-    <section class="container">
-      <div class="image-container">
-        <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped1.png" class="sliderImage">
-        <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped2.png" class="sliderImage" style="display: none;">
-        <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped3.png" class="sliderImage" style="display: none;">
-        <img src="assets/Red Planet Ventures/Assets/Images/marsSliderClipped14.png" class="sliderImage" style="display: none;">
-        <div class="arrow-container">
-          <div class="arrowLeft">
-            <img src="assets/Red Planet Ventures/Assets/Images/arrowLeftWhite.png" id="arrowLeft">
-          </div>
-          <div class="arrowRight">
-            <img src="assets/Red Planet Ventures/Assets/Images/arrowRightWhite.png" id="arrowRight">
-          </div>
+      <div class="container-fluid p-5 purple-bg">
+        <div class="row justify-content-center">
+          <h2 class="section-title">UPCOMING TRIP SNEAK PEAK</h2>
+        </div>
+        
+        <div class="row justify-content-center mt-5">
+          <h1 class="main-title w-50">Take A Look At Some Of Our Upcoming Trips</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="trip-card col-sm-6 col-xl-3">
+              <div class="trip-card-image mars"></div>
+              <h3 class="trip-card-title mt-5">The Classic Mars Experience</h3>
+              <p class="trip-card-description mt-3">
+                Explore red deserts, ancient relics, low-gravity adventures on Mars.
+              </p>
+            </div>
+            <div class="trip-card col-sm-6 col-xl-3">
+              <div class="trip-card-image neptune"></div>
+              <h3 class="trip-card-title mt-5">Neptune's Cosmic Dive</h3>
+              <p class="trip-card-description mt-3">
+                Experience Neptune's mysterious depths in a celestial voyage.
+              </p>
+            </div>
+            <div class="trip-card col-sm-6 col-xl-3">
+              <div class="trip-card-image jupiter"></div>
+              <h3 class="trip-card-title mt-5">Jupiter: The Giant's Journey</h3>
+              <p class="trip-card-description mt-3">
+                Embark on Jupiter and witness the gas giant's majesty.
+              </p>
+            </div>
+            <div class="trip-card col-sm-6 col-xl-3">
+              <div class="trip-card-image saturn"></div>
+              <h3 class="trip-card-title mt-5">Ring a Round a Saturn</h3>
+              <p class="trip-card-description mt-3">
+                Explore Saturn's rings, moons, and enigmatic beauty on an odyssey.
+              </p>
+            </div>
+            <button class="btn-light">Book a Trip Now</button>
         </div>
       </div>
-    
-      <div class="content">
-        <h2>FEATURED TRIP</h2>
-        <h1>THE CLASSIC MARS <br /> EXPERIENCE</h1>
-        <p>
-          Embark on a Mars vacation: red deserts, ancient <br />relics, and towering
-          canyons await. Enjoy low-gravity<br /> hiking, rover trips to Olympus Mons,
-          and stargazing <br />under Phobos and Deimos. Unforgettable <br />adventures
-          beckon on the rust-colored landscapes of the <br />Red Planet.
-        </p>
-        <button class="book-now" id="bookNowBtn">Book Now</button>
-      </div>
-      <script src="js/script.js"></script>
-    </section>
-
-    <section class="container-os">
-      <div class="content-os">
-        <h2>OUR SHUTTLES</h2>
-        <h1 class="shuttles">Travel In Style With A Variety Of Shuttles</h1>
-        <p class="shuttlesp">
-          Select from our range of luxury, commercial, or<br / > budget shuttles to fulfill your dream space<br / > vacation. Experience unparalleled comfort and<br / > convenience as you journey to your planet of<br / > choice, ensuring an unforgettable and tailored <br / >experience for every traveler.
-        </p>
-      </div>
-      <div class="image-container-os">
-        <img
-          src="assets/Red Planet Ventures/Assets/Images/spacSchuttles.png"
-        />
-      </div>
-    </section>
-
-    <div class="container-td">
-      <h2 class="section-title">UPCOMING TRIP SNEAK PEAK</h2>
-      <h1 class="main-title">Take A Look At Some Of Our <br / >Upcoming Trips<h1>
-      <div class="trip-cards">
-        <div class="trip-card">
-          <div class="trip-card-image mars"></div>
-          <h3 class="trip-card-title">The Classic Mars  <br / >Experience</h3>
-          <p class="trip-card-description">
-            Explore red deserts, ancient relics,  <br / >low-gravity adventures on Mars.
-          </p>
-        </div>
-        <div class="trip-card">
-          <div class="trip-card-image neptune"></div>
-          <h3 class="trip-card-title">Neptune's Cosmic  <br / >Dive</h3>
-          <p class="trip-card-description">
-            Experience Neptune's mysterious <br / > depths in a celestial voyage.
-          </p>
-        </div>
-        <div class="trip-card">
-          <div class="trip-card-image jupiter"></div>
-          <h3 class="trip-card-title">Jupiter: The Giant's  <br / >Journey</h3>
-          <p class="trip-card-description">
-            Embark on Jupiter and witness the  <br / >gas giant's majesty.
-          </p>
-        </div>
-        <div class="trip-card">
-          <div class="trip-card-image saturn"></div>
-          <h3 class="trip-card-title">Ring a Round a  <br / >Saturn</h3>
-          <p class="trip-card-description">
-            Explore Saturn's rings, moons, and  <br / >enigmatic beauty on an odyssey.
-          </p>
-        </div>
-      </div>
-        <button class="book-trip-btn">Book a Trip Now</button>
-        <script src="js/script.js"></script>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./JS/flight_products.js"></script>
+    <script src="./JS/cart.js"></script>
+    <script src="./JS/search.js"></script>
+    <script src="./JS/index.js"></script>
+  
   </body>
 
   <footer class="footer">
-    <div class="footer-top">
-      <div class="company-info">
-        <div class="logoFooter">
-          <img
-            src="assets/Red Planet Ventures/Assets/Images/logo.png"
-            width="266px"
-          />
+    <div class="container-fluid">
+      <div class="row mb-5">
+        <div class="company-info col-xl-4 col-sm-6 order-xl-1 order-2">
+          <div class="logoFooter">
+            <img
+              src="assets/Red Planet Ventures/Assets/Images/logo.png"
+              width="266px"
+            />
+          </div>
+          <p class="tagline">Offering unforgettable trips to explore planets in our solar system. </p>
         </div>
-        <span class="tagline"
-          >Offering unforgettable trips to<br / > explore planets in our <br / >solar
-          system.</span
-        >
+        
+        <nav class="footer-nav col-xl-4 col-sm-12 order-xl-2 order-1">
+          <div class="nav-links">
+            <div class="SocialTile">Company</div>
+            <a href="index.html">Home</a>
+            <a href="pages/flights.html">Flights</a>
+            <a href="pages/contact.html">Contact Us</a>
+            <a href="pages/about.html">About</a>
+          </div>
+        </nav>
+
+        <div class="social-links col-xl-4 col-sm-6 order-xl-3 order-3">
+          <div>
+            <div class="SocialTile">Social Media Links</div>
+
+            <div class="sm-item">
+              <a href="https://www.instagram.com/openwindowinstitute?igsh=MWF4Nmg5enltd3hicw=="
+                ><i class="fab fa-instagram">
+                  <img
+                    src="assets/Red Planet Ventures/Assets/Images/smInstagram.png"
+                    alt="Instagram"
+                    width="77px"
+                  /> </i
+              ></a>
+              <a href="https://www.tiktok.com/@open_window_"
+                ><i class="fab fa-tiktok">
+                  <img
+                    src="assets/Red Planet Ventures/Assets/Images/smTicktock.png"
+                    alt="Ticktock"
+                    width="77px"
+                  /> </i
+              ></a>
+              <a href="https://m.facebook.com/theopenwindow?mibextid=dGKdO6"
+                ><i class="fab fa-facebook">
+                  <img
+                    src="assets/Red Planet Ventures/Assets/Images/smFacebook.png"
+                    alt="Facebook"
+                    width="77px"
+                  /> </i
+              ></a>
+              <a href="https://twitter.com/open_window_?lang=en"
+                ><i class="fab fa-twitter">
+                  <img
+                    src="assets/Red Planet Ventures/Assets/Images/smX.png"
+                    alt="X"
+                    width="77px"
+                  /> </i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <nav class="footer-nav">
-        <div class="nav-links">
-          <div class="SocialTile">Company</div>
-          <a href="index.html">Home</a>
-          <a href="pages/flights.html">Flights</a>
-          <a href="pages/contact.html">Contact Us</a>
-          <a href="pages/about.html">About</a>
+
+      <hr style="color: rgb(160, 160, 160); background-color: gray; width: 100%" />
+
+      <div class="footer-bottom">
+        <p class="legal-text">All Rights Reserved &copy; Open Window 2024</p>
+        <div class="links">
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy &amp; Policy</a>
         </div>
-      </nav>
-
-      <div class="social-links">
-        <div class="SocialTile">Social Media Links</div>
-
-        <div class="sm-item">
-          <a href="https://www.instagram.com/openwindowinstitute?igsh=MWF4Nmg5enltd3hicw=="
-            ><i class="fab fa-instagram">
-              <img
-                src="assets/Red Planet Ventures/Assets/Images/smInstagram.png"
-                alt="Instagram"
-                width="77px"
-              /> </i
-          ></a>
-          <a href="https://www.tiktok.com/@open_window_"
-            ><i class="fab fa-tiktok">
-              <img
-                src="assets/Red Planet Ventures/Assets/Images/smTicktock.png"
-                alt="Ticktock"
-                width="77px"
-              /> </i
-          ></a>
-          <a href="https://m.facebook.com/theopenwindow?mibextid=dGKdO6"
-            ><i class="fab fa-facebook">
-              <img
-                src="assets/Red Planet Ventures/Assets/Images/smFacebook.png"
-                alt="Facebook"
-                width="77px"
-              /> </i
-          ></a>
-          <a href="https://twitter.com/open_window_?lang=en"
-            ><i class="fab fa-twitter">
-              <img
-                src="assets/Red Planet Ventures/Assets/Images/smX.png"
-                alt="X"
-                width="77px"
-              /> </i
-          ></a>
-        </div>
-      </div>
-    </div>
-
-    <hr style="color: rgb(160, 160, 160); background-color: gray; width: 100%" />
-
-    <div class="footer-bottom">
-      <p class="legal-text">All Rights Reserved &copy; Open Window 2024</p>
-      <div class="links">
-        <a href="#">Terms &amp; Conditions</a>
-        <a href="#">Privacy &amp; Policy</a>
       </div>
     </div>
   </footer>

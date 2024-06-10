@@ -1,0 +1,74 @@
+/* 
+    The about.css file affects only the styles on about.html
+*/
+
+.abouth{
+    font-family: "Porter Sans Block";
+    font-size: 60px;
+    text-align: center;
+    margin-top: 2.2em;
+}
+
+.contactHeader {
+    background-image: url("../assets/Red Planet Ventures/Assets/Images/headerbackBack.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2em;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 50%;
+    transform: translateY(50%);
+    text-align: left;
+}
+
+.carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.carousel-caption .btn {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+}
+
+.history-section, .about-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.history-section h2, .about-section h2{
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.history-section p, .about-section p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
