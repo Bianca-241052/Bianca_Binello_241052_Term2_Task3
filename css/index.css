@@ -111,22 +111,6 @@ p {
   color: white;
 }
 
-.book-now {
-  background-color: #e7bc80;
-  color: #fff;
-  border: none;
-  padding: 22px 40px;
-  font-size: 26px;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.book-now:hover {
-  background-color: #d35b4c;
-}
-
 .rpv-container-os {
   display: flex;
   flex-direction: row;
@@ -214,18 +198,3 @@ p {
   text-align: center;
 }
 
-.book-trip-btn {
-  background-color: #e7bc80;
-  color: #fff;
-  border: none;
-  padding: 22px 40px;
-  font-size: 26px;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.book-trip-btn:hover {
-  background-color: #d35b4c;
-}
