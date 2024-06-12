@@ -1,6 +1,3 @@
-/* 
-    The flights.css file affects only the styles on flight.html
-*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
@@ -67,7 +64,7 @@
   background-size: cover;
   padding-top: 2em;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -120,12 +117,12 @@ width: 30%;
 }
 
 .container {
-  padding: 20px;
+  padding: 60px;
 }
 
 .card img {
-  max-width: 100%;
-  height: auto;
+  width: 1000px !important;
+  height: 1000px !important;
   border-radius: 4px;
 }
 

@@ -1,6 +1,6 @@
 
 :root {
-    --primary: #45016d;
+    --primary: #11016d;
     --secondary: #006eff;
     --tertiary: #50bfd7;
 }
@@ -68,7 +68,7 @@ li.nav-item {
 nav {
     background-color: rgba(255, 255, 255, 0.648);
     border-radius: 25px;
-    padding: 20px 12px;
+    padding: 18px 12px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;

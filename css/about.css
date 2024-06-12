@@ -1,6 +1,3 @@
-/* 
-    The about.css file affects only the styles on about.html
-*/
 
 .abouth{
     font-family: "Porter Sans Block";
@@ -38,11 +35,13 @@ body {
     bottom: 50%;
     transform: translateY(50%);
     text-align: left;
+    color: #45016d;
 }
 
 .carousel-caption h1 {
     font-size: 4rem;
     font-weight: 700;
+    color: #45016d;
 }
 
 .carousel-caption p {
