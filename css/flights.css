@@ -4,7 +4,12 @@
 .Flight-Info {
   display: flex;
   padding: 5em;
-  min-height: 100vh;
+  min-height: 80vh;
+}
+
+.Flight-Info img {
+  height: 700px;
+  width: 500px;
 }
 
 .Flight-Info:nth-child(2n) {
@@ -121,8 +126,8 @@ width: 30%;
 }
 
 .card img {
-  width: 1000px !important;
-  height: 1000px !important;
+  max-height: auto;
+  max-width: auto;
   border-radius: 4px;
 }
 
