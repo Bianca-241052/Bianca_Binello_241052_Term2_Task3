@@ -23,7 +23,7 @@
 .bottomLeft {
   font-family: "Porter Sans Block";
   color: #ea0303;
-  font-size: 64px;
+  font-size: 48px;
 }
 
 .bottomLeftH{
@@ -38,12 +38,19 @@
 
 .image-container {
   position: relative;
-  width: 800px;
+  width: 609px;
 }
 
 .image-container img {
-  width: 640px;
+  width: 609px;
   border-radius: 8px;
+  height: 649px;
+  margin: auto;
+}
+
+.travel-section img {
+  width: 609px;
+  height: 477px;
 }
 
 .arrow-container {
@@ -164,7 +171,6 @@ p {
 
 .trip-card {
   border-radius: 15px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,9 +178,8 @@ p {
 }
 
 .trip-card-image {
-  width: 100%;
-  max-width: 350px;
-  height: 350px;
+  width: 278px;
+  height: 278px;
   border-radius: 30px;
   background-size: cover;
   background-position: center;
@@ -199,12 +204,14 @@ p {
 .trip-card-title {
   font-size: 28px;
   font-weight: 600;
+  width: 278px;
   margin-bottom: 1px;
   text-align: center;
   color: white;
 }
 
 .trip-card-description {
+  width: 278px;
   font-size: 18px;
   margin-bottom: 0;
   text-align: center;

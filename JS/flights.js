@@ -29,7 +29,7 @@ function getToAndFromDate (fromDate, toDate) {
 
 // Helper function to format number to price string
 function formatPrice(number) {
-  if(number === undefined || number ===null || number === 0 || number === "")
+  if(number === undefined || number ===null || number === "")
     return '';
   return 'R ' + number.toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
@@ -38,7 +38,7 @@ function formatPrice(number) {
 function generateFlightHTML(flight) {
   return `
     <div class="Flight-Info" id="${flight.sku}">
-      <div class="col-lg-5">
+      <div class="col-lg-5" style="text-align: center;">
         <img class="img-fluid" src="${flight.image}" alt="${flight.title}">
       </div>
       <div class="col-lg-7">
@@ -55,18 +55,18 @@ function generateFlightHTML(flight) {
         <p class="whitep">${flight.description.replace(/\n/g, '<br>')}</p>
         <div class="button-group">
           <div class="qtaBox">
-            <p class="minus-btn">-</p>
+            <p class="minus-btn mr-1">-</p>
             <input value="${flight.quantity}" class="info-btn" data-sku="${flight.sku}" />
-            <p class="plus-btn">+</p>
+            <p class="plus-btn ml-1">+</p>
           </div>
-          <button class="book-btn" data-sku="${flight.sku}">Book Now</button>
+          <button class="btn-style book-btn" data-sku="${flight.sku}">Book Now</button>
         </div>
         <hr style="color:gray;background-color:gray;width: 100%;">
         <div class="details">
-          <p>SKU : ${flight.sku}</p>
-          <p>Shuttle : ${flight.shuttle}</p>
-          <p>Tags : ${flight.tags.join(', ')}</p>
-          <p>Date : ${getToAndFromDate(flight.fromDate, flight.toDate)}</p>
+          <p class="detail-grid-container"><span>SKU</span><span>:</span><span>${flight.sku}</span></p>
+          <p class="detail-grid-container"><span>Shuttle</span><span>:</span><span>${flight.shuttle}</span></p>
+          <p class="detail-grid-container"><span>Tags</span><span>:</span><span>${flight.tags.join(', ')}</span></p>
+          <p class="detail-grid-container"><span>Date</span><span>:</span><span>${getToAndFromDate(flight.fromDate, flight.toDate)}</span></p>
         </div>
       </div>
     </div>
